@@ -136,19 +136,23 @@ ul li.checked::before{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 @media only screen and (max-width: 600px) {
-    .inputbox{
-        padding: 5px 10px;
-
-    }
     .inputbox button{
         padding: 10px 25px;
         margin: auto;
+        
     }
+    .inputbox input{
+        position: relative;
+        text-align: center;
+        right: 1%;
+    }    
+    
 } 
 
 @media only screen and (max-width: 350px) {
     .inputbox input{
-       position: relative;
-       right: 20px;
+        position: relative;
+        text-align: center;
+        right: 6%;
     }
   } 
