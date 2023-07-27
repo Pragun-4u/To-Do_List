@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Roboto&display=swap" rel="stylesheet">
+    <title>To-do App | By Pragun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <img src="https://icones.pro/wp-content/uploads/2021/02/icone-de-tique-ronde-rouge.png" alt=""> -->
+    
+    <div class="container">
+
+        <div class="todoapp">
+           <h2>To-Do List <img src="https://icons-for-free.com/iconfiles/png/512/done+exam+list+pencil+todo+icon-1320196901489830645.png" alt=""> </h2>
+        
+           <div class="inputbox">
+                <input type="text" placeholder="Add a Task" id="inputtext">
+                <button onclick="addTask()">Add</button>
+               
+           </div>
+           <h4 id="warn"></h4>
+           <ul id="listcontainer">
+            <!-- <li class="checked">list1</li>
+            <li>list2</li>
+            <li>list3</li> -->
+           </ul>
+
+        </div>
+        <div class="signature">
+            <h4>A To-Do List | by <span>Pragun</span></h4>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
