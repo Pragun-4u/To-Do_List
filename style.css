@@ -40,37 +40,41 @@
 
 .inputbox{
     /* border: 2px solid red; */
-    margin-top: 15px;
-    margin-bottom: 20px;
-    align-items: center;
+    margin: 20px 0px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
+}
+.inputtextcontainer{
+    /* border: 2px solid red; */
+    width: 75%;
 
+}
+#inputtext{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    flex: 1;
+    box-shadow: -1px 1px 1px black;
+    color: black;
+    text-shadow: 0px 0px 0px black;
+    transition: all 0.2s ease;
 }
 #inputtext:hover{
     box-shadow: 1px 1px 2px black;
     transform: scale(1.01);
 
 }
-.inputbox input{
-    /* flex: 1; */
-    /* border:none;
-    outline: none;
-    padding: 10px; */
-    /* height: 50px; */
-    border-radius: 15px;
-    padding: 12px 50px 12px 50px;
-    background:transparent;
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: 600;
-}
+
 .inputbox button{
-    padding: 16px 50px;
+    padding: 12px 30px;
     border-radius: 30px;
     border: none;
-    /* margin: 20px 0px; */
+    margin-left: 10px;
     background-color: rgba(253, 71, 71, 0.648);
     outline: none;
     cursor: pointer;
@@ -137,37 +141,22 @@ ul li.checked::before{
     text-decoration: underline white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
 @media only screen and (max-width: 600px) {
-    .inputbox button{
-        padding: 10px 25px;
-
-        margin: auto;
-        margin-top: 7px;
-        
-    }
-    .inputbox input{
-        /* position: relative; */
-        text-align: center;
-        /* right: 1%; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 50px 10px 50px;
-
-    }    
     
-} 
-
-@media only screen and (max-width: 380px) {
-    .inputbox input{
-
-        padding: 8px 30px 8px 30px;
-    }    
-} 
-
-@media only screen and (max-width: 350px) {
-    .inputbox input{
-
-        padding: 8px 0px 8px 0px;
-        }    
-} 
+    .inputbox .addbtn{
+        display: block;
+        width: 100%;
+        margin-top:10px ;
+       /* border: 2px solid red; */
+    }
+    .inputbox button{
+        display: block;
+        margin: auto;
+    }
+    .inputbox .inputtextcontainer{
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+    
+  }
